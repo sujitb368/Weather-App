@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(24, 24, 27, .9);
+    color: #fff;
+    background-color: royalblue;
+    font-weight: 300;
+}
+.wether{
+    display: flex;
+    justify-content: space-between;
+}
+
+.time{
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.date{
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.more_wether_info{
+    margin: 1rem;
+    padding: 05px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.more_wether_info .wether_item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.place_container{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: end;
+
+}
+.place_container .time_zone{    
+    font-size: 2rem;
+    /* font-weight: 50; */
+}
+.place_container .country{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.future_forcast{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 25px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(24, 24, 27, .9);
+    
+    
+}
+.future_forcast .today_forcast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #aaa; 
+    border-radius: 0.3rem;
+    margin: 0.4rem ;
+    padding: 1rem;
+}
+.future_forcast .today_forcast .day{
+    /* display: flex; */
+    padding: 5px 15px;
+    background-color: teal;
+    border: 1px solid black;
+    border-radius: 50px;
+    text-align: center;
+    margin: 3px 20px;
+}
+.today_forcast .temp{
+    font-size: 30px;
+    padding-top: 15px;
+}
+.future_forcast .remaining_day_forcast{
+    display: flex;
+
+    /* margin-left: 1rem; */
+}
+.future_forcast .remaining_day_forcast_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+.future_forcast .remaining_day_forcast_item .day{
+    padding: 5px 15px;
+    background-color: teal;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px 0;
+}
+.future_forcast .remaining_day_forcast_item .temp{
+    font-weight: 100;
+    padding: 5px 15px;
+}
+
+
+/* responsive css */
+@media only screen and (max-width:730px) {
+    .future_forcast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .future_forcast{
+        justify-content: start;
+        align-items: none;
+        overflow-x: scroll;
+    }
+}
